@@ -69,7 +69,7 @@ def create_shortened_url(request):
 	random_chars2 = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 5))
 
 	#append to domain name
-	shortened_link = DOMAIN_NAME + "/" + random_chars
+	shortened_link = DOMAIN_NAME [+ "/" ][+ random_chars]))
 	tracking_link = TRACKING_DOMAIN_NAME + "/" + random_chars2
 
 	#What if randomly generated chars already exist?
